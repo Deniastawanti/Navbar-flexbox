@@ -13,7 +13,11 @@
   </head>
   <body>
     <div class="wrapper">
+      <header class="top">
+        <h1><a href="#">My Life My Adventure</a></h1>
+      </header>
       <nav class="flex-nav">
+        <a href="#" class="toggleNav">Menu</a>
         <ul>
           <li><a href="#">Destination</a></li>
           <li><a href="#">Galleries</a></li>
@@ -66,8 +70,16 @@
       </section>
 
       <footer>
-        <p>&copy;https://swandria.com/</p>
+        <p>&copy; swandria.com</p>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      s(function() {
+        s(".toggleNav").on("click", function() {
+          s(".flex-nav ul").toggleClass("open");
+        });
+      });
+    </script>
   </body>
 </html>
