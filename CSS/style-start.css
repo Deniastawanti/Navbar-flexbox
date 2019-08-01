@@ -87,7 +87,7 @@ footer {
   .flex-nav li {
     flex-basis: 100%;
   }
-/* flex-container */
+  /* flex-container */
   .wrapper > * {
     display: flex;
     flex-direction: column;
@@ -95,11 +95,11 @@ footer {
 
   /* flex-item */
   .wrapper > * {
-    order:9999;
+    order: 9999;
   }
 
   .flex-nav {
-    order:1;
+    order: 1;
   }
   .toggleNav {
     display: block;
@@ -107,7 +107,16 @@ footer {
   .flex-nav ul {
     display: none;
   }
-  .flex-nav ul. open {
+  .flex-nav ul .open {
     display: flex;
+  }
+  .top {
+    order: 2;
+  }
+  .details {
+    order: 3;
+  }
+  .singup {
+    order: 4;
   }
 }
